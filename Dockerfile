@@ -3,10 +3,10 @@ FROM alpine:3.10.3
 
 RUN apk add --no-cache python3
 
-RUN pip install prometheus_client
+RUN pip3 install prometheus_client
 
 COPY temperature_statistic.py TemperatureStatistic/temperature_statistic.py
 
 EXPOSE 8000
 
-ENTRYPOINT ["/usr/bin/python", "TemperatureStatistic/temperature_statistic.py"]
+ENTRYPOINT ["/usr/bin/python3", "TemperatureStatistic/temperature_statistic.py"]
