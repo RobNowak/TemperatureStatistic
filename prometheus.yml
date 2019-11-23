@@ -31,4 +31,4 @@ scrape_configs:
   - job_name: 'temperature'
     metrics_path: "/"
     static_configs:
-    - targets: ['localhost:8000']
+    - targets: ['raspberrypi:8000']
