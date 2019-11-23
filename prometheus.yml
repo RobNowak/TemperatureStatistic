@@ -29,5 +29,6 @@ scrape_configs:
     - targets: ['localhost:9090']
 
   - job_name: 'temperature'
+    metrics_path: "/"
     static_configs:
     - targets: ['localhost:8000']
